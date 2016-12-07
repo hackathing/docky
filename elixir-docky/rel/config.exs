@@ -31,6 +31,7 @@ end
 # will be used by default
 
 release :docky do
-  set version: current_version(:docky)
+  # set version: current_version(:docky)
+  set version: "unversioned"
 end
 

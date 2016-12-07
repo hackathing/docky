@@ -2,7 +2,7 @@ defmodule Docky do
   use Application
 
   def start(_type, _args) do
-    port = System.get_env("PORT") || 4000
+    port = get_port()
     IO.puts """
     Elixir HTTP server starting on port #{port}
     """
@@ -13,5 +13,15 @@ defmodule Docky do
     ]
     opts = [strategy: :one_for_one, name: Docky.Supervisor]
     Supervisor.start_link(children, opts)
+  end
+
+  defp get_port do
+    case System.get_env("PORT") do
+      nil ->
+        4000
+      p ->
+        {port, _} = Integer.parse(p)
+        port
+    end
   end
 end
