@@ -1,5 +1,5 @@
 # start with the base ruby image
-From ruby:2.3.0
+From ruby:2.3.0-alpine
 
 # Install ruby app dependencies
 ENV APP_HOME /app

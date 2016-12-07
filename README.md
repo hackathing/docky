@@ -8,12 +8,9 @@ Learning about Docker and deployment :)
 # Build the sinatra app docker image
 docker build -t sinatra-docky ./sinatra-docky
 
-# Start the docker container
-docker run sinatra-docky
+# Start a container with the sinatra-docky image exposing port 9292
+docker run -p 9292:9292 sinatra-docky
 
 # View running docker containers
 docker ps
-
-# Map a port on local machine to the port on the docker image
-docker run -p 9292:9292 sinatra-docky
 ```
