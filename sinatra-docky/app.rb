@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class SinatraDocky < Sinatra::Base
+class SinatraDocky < Sinatra::Application
 
   get '/' do
     'Hello, from Sinatra!'

@@ -1,0 +1,14 @@
+version: "2"
+services:
+  express:
+    build: ./express-docky
+    ports:
+      - "3000:3000"
+  sinatra:
+    build: ./sinatra-docky
+    ports:
+      - "9292:9292"
+  elixir:
+    build: ./elixir-docky
+    ports:
+      - "4000:4000"
