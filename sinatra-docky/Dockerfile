@@ -14,4 +14,4 @@ COPY . $APP_HOME
 # Start server
 ENV PORT 9292
 EXPOSE 9292
-CMD ["rackup"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0"]

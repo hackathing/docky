@@ -15,7 +15,5 @@ docker run sinatra-docky
 docker ps
 
 # Map a port on local machine to the port on the docker image
-docker run -p 127.0.0.1:9292:9292 sinatra-docky
+docker run -p 9292:9292 sinatra-docky
 ```
-
-
