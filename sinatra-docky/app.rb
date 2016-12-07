@@ -3,6 +3,6 @@ require 'sinatra/base'
 class SinatraDocky < Sinatra::Base
 
   get '/' do
-    'Hello, mum!'
+    'Hello, from Sinatra!'
   end
 end
