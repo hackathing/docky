@@ -1,16 +1,13 @@
 # Docky
 
-Learning about Docker and deployment :)
+Experimenting with Docker and friends.
 
-## Usage
 
-```sh
-# Build the sinatra app docker image
-docker build -t sinatra-docky ./sinatra-docky
+### docker-creche
 
-# Start a container with the sinatra-docky image exposing port 9292
-docker run -p 9292:9292 sinatra-docky
+Hello world in Ruby, Node and Elixir using Docker and Docker compose.
 
-# View running docker containers
-docker ps
-```
+
+### rabbitmqueuer
+
+Running RabbitMQ and some Ruby workers in Docker.
