@@ -6,8 +6,12 @@ services:
     ports:
       - "4369"
       - "5671"
-      - "5672"
+      - "5672:5672"
       - "25672"
+  redis:
+    image: redis
+    ports:
+      - "6379"
   consumer1:
     build: .
     environment:

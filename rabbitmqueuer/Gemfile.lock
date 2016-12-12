@@ -4,12 +4,14 @@ GEM
     amq-protocol (2.0.1)
     bunny (2.6.1)
       amq-protocol (>= 2.0.1)
+    redis (3.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bunny
+  redis
 
 RUBY VERSION
    ruby 2.3.0p0

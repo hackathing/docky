@@ -2,4 +2,5 @@ source "https://rubygems.org"
 
 ruby "2.3.0"
 
-gem "bunny"   # RabbitMQ client
+gem "bunny" # RabbitMQ client
+gem "redis" # Redis client
