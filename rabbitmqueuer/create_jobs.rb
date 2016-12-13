@@ -7,7 +7,10 @@ RMQ_Q = RMQ_CHAN.queue("hello")
 
 (1..500).each do |e|
   puts e
-  RMQ_CHAN.default_exchange.publish(e.to_s, routing_key: RMQ_Q.name)
+  RMQ_CHAN.default_exchange.publish(
+    e.to_s.rjust(4, "0"),
+    routing_key: RMQ_Q.name
+  )
 end
 
 RMQ_CONN.close
